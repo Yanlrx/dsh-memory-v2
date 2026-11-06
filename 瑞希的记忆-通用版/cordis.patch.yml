@@ -1,4 +1,0 @@
-# dsh-memory-v2 bundle patch: inserts the local memory plugin into a profile's layer stack.
-- insert:
-    - id: memory-v2
-      name: 'dsh-memory-v2'
