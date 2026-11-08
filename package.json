@@ -1,0 +1,70 @@
+{
+    "name": "dsh-memory-v2",
+    "version": "0.3.1",
+    "description": "Privacy-conscious long-term memory plugin for DeepSeek Harness",
+    "license": "MIT",
+    "author": "伊万莉瑞希",
+    "private": false,
+    "type": "module",
+    "main": "lib/index.js",
+    "exports": {
+        ".": "./lib/index.js",
+        "./store": "./lib/store.js",
+        "./recall": "./lib/recall.js",
+        "./consolidate": "./lib/consolidate.js",
+        "./valid": "./lib/valid.js",
+        "./weight": "./lib/weight.js",
+        "./expiry": "./lib/expiry.js",
+        "./package.json": "./package.json",
+        "./client": "./client.js"
+    },
+    "files": [
+        "lib",
+        "client.js",
+        "cordis.patch.yml",
+        "README.md",
+        "LICENSE",
+        "PRIVACY.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md",
+        "config.example.json",
+        "test",
+        "tools"
+    ],
+    "keywords": [
+        "deepseek-harness",
+        "dsh-plugin",
+        "memory",
+        "privacy"
+    ],
+    "scripts": {
+        "test": "node tools/run-tests.mjs",
+        "privacy:check": "node tools/privacy-check.mjs --mode=repository",
+        "privacy:check:artifact": "node tools/privacy-check.mjs --mode=artifact",
+        "privacy:check:installed": "node tools/privacy-check.mjs --mode=installed",
+        "pack:check": "npm pack --dry-run --json",
+        "prepack": "npm run privacy:check:installed && npm test"
+    },
+    "dsh": {
+        "bundle": {
+            "patch": "./cordis.patch.yml"
+        },
+        "client": {
+            "platform": "web",
+            "immediately": true,
+            "inject": ["@deepseek-ai/dsh-client-ui-slots"]
+        }
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@deepseek-ai/schemastery": "^3.18.5"
+    },
+    "optionalDependencies": {
+        "@xenova/transformers": "^2.17.2"
+    }
+}
