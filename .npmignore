@@ -1,0 +1,4 @@
+.github/
+config.example.local.json
+*.log
+*.zip
