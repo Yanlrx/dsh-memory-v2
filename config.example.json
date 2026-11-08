@@ -1,0 +1,10 @@
+{
+  "会话白名单": [],
+  "排除会话": [],
+  "会话归属": {
+    "session-example-a": "alice",
+    "session-example-b": "bob"
+  },
+  "排除归属": [],
+  "未映射会话写入待认领": true
+}
