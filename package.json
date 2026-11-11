@@ -1,7 +1,7 @@
 {
     "name": "dsh-memory-v2",
     "version": "0.3.1",
-    "description": "Privacy-conscious long-term memory plugin for DeepSeek Harness",
+    "description": "瑞希的记忆（dsh-memory-v2）—— 注重隐私的 DeepSeek Harness 本地长期记忆插件",
     "license": "MIT",
     "author": "伊万莉瑞希",
     "private": false,

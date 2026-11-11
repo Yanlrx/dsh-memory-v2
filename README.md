@@ -1,6 +1,6 @@
-# dsh-memory-v2
+# 瑞希的记忆（dsh-memory-v2）
 
-一个面向 DeepSeek Harness（DSH）的本地长期记忆插件。它把结构化记忆、原文情景、溯源索引和巩固状态保存在用户自己的 DSH 数据目录中。
+一个面向 DeepSeek Harness（DSH）的本地长期记忆插件，名为「瑞希的记忆」。它把结构化记忆、原文情景、溯源索引和巩固状态保存在用户自己的 DSH 数据目录中。
 
 > 隐私提醒：本插件会在本地明文保存对话原文和提取后的记忆。请先阅读 [PRIVACY.md](PRIVACY.md)。
 
